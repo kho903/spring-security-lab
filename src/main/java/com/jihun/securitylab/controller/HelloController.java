@@ -10,4 +10,15 @@ public class HelloController {
 	public String hello() {
 		return "Hello Spring Security";
 	}
+
+	@GetMapping("/public")
+	public String publicPage() {
+		return "Public Page";
+	}
+
+	@GetMapping("/private")
+	public String privatePage() {
+		return "Private Page";
+	}
+
 }
